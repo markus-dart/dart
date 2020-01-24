@@ -61,7 +61,7 @@ Variables that are assigned through `final`, `var` or `dynamic` are evaluated at
 
 Sometimes, situations may arise where a value, say the *height* of a *Button*, is known even before compilation. These values can be assigned right at *compile-time* using `const`.
 
-**What `const` does to variables ?**  
+**How `const` modifies variables ?**  
 
 >Memory is allocated to a `const` variable at compile-time and, for a `final` variable at runtime.
 
@@ -73,12 +73,19 @@ Any *variable* prefixed with `const` is evaluated at compile-time. Notice that `
 
 >Hence, a `const` variable or rather a `const` identifier is a compile-time object that takes only *constant* `values`.
 
-**What `const` does to values ?**
+**How `const` modifies values ?**
+
+>When `const` is prefixed on a value it generates a single memory for that literal, and any objects that have the same constant value refer to that memory.
 
 ```dart
 const numbers = const [1, 2, 3];
 var values = const [1, 2, 3]; //Also Valid
+print(identical(numbers, values)); //results in 'true' as they point to the same memory
+
+values = new List<int>(4); //can point to new object of same type
 ```
+
+`identical()` is used to know whether two objects are the exact same object.
 
 >Note that `[1, 2, 3]` is a collection literal which is primitive in nature, therefore it can be modified using a `const`.
 
@@ -86,11 +93,25 @@ The above code clearly distinguishes the working of `const` i.e. it modifies lit
 
 In conclusion, a constant variable is an immutable *compile-time* variable that takes only constant values whereas a final variable is a *runtime* variable that can be assigned only *once*.
 
-In practice, the `const` on *values* is generally omitted, the below example implies the same meaning as previous,
+In practice, the `const` on *values* is generally omitted for *`const` variables*, the below example implies the same meaning as previous,
 
 ```dart
 const numbers = [1, 2, 3];
+var values = const [1, 2, 3];
+print(identical(numbers, values)); //is again 'true'
+
+values = new List<int>(3); //can point to new object of same type
+```
+
+The below code clearly differentiates that `const` is applied to literals only when the variable is a `const`.
+
+```dart
+const numbers = /* const */ [1, 2, 3];
 var values = [1, 2, 3];
+
+/*here 'values' is initialized with a new primitive object by default, being a var variable */
+
+print(identical(numbers, values)); //hence results in 'false'
 ```
 
 The nature of `const` can be further solidified in the classes and objects section.
