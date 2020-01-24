@@ -93,4 +93,4 @@ const numbers = [1, 2, 3];
 var values = [1, 2, 3];
 ```
 
-The nature of `const` can be further understood in the classes and objects section.
+The nature of `const` can be further solidified in the classes and objects section.
