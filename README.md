@@ -20,7 +20,19 @@ It is designed with the idea of facilitating the *design* and *performance* of u
 
 It is a purely *object oriented language* in that, every instance of code within dart is an equivalent object that represents that code.
 
-It is stylistically similar to C and uses the familiar *block style* syntax. It is also a compiled language, and has its own virtual machine to run Dart, called the Dart VM which has extensive features like *hot reload* and *AOT compilation* to enhance productivity of *development*.
+It is syntatically similar to the *C language* and uses the familiar *block style* syntax.  
+
+```dart
+//This is a block, enclosed by curly brackets
+{
+  //statement1
+  //statement2
+  //  .
+  //  .
+}
+```
+
+It is also a compiled language, and has its own virtual machine to run Dart, called the Dart VM which has extensive features like *hot reload* and *AOT compilation* to enhance productivity of *development*.
 
 >Note: The functionality of Dart VM is not discussed here, this guide is to introduce the Dart language and it's core concepts.
 
@@ -51,7 +63,7 @@ If you are intending to use Dart for Flutter, then you do not require the dart S
 
 After going through the guide, once can either broaden their knowledge by visiting the specification or understand how to write effective dart code,
 
-- [Go to the Dart Specification][dartspec]
+- [Go to the Dart Language Specification][dartspec]
 - [Learn Effective Dart][effectivedart]
 
 [dartpad]: https://dartpad.dev
