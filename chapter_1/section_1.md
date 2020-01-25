@@ -1,6 +1,6 @@
-# Variables and Values
+# **Variables and Values**
 
-## Variables  
+## **Variables**  
 
 Variables are generally references to some values in memory. A good distinction to make, before proceeding to understanding variables, is that *variables* and *values* mean entirely different things.
 
@@ -47,7 +47,7 @@ name = 'Connor'; //Cannot change value of final field
 
 As the above code shows, a `final` variable is one that can only be *initialized* once, from where it cannot be modified. It creates an *immutable* object, in this case a `String`.
 
-## The `const` keyword
+### **The `const` keyword**
 
 So far, every *variable type* discussed are instantiated at *runtime* i.e. the Dart VM gets to know the *types* or even *values* only at *runtime*.
 
@@ -85,9 +85,9 @@ print(identical(numbers, values)); //results in 'true' as they point to the same
 values = new List<int>(4); //can point to new object of same type
 ```
 
-`identical()` is used to know whether two objects are the exact same object.
+>`identical()` is used to know whether two objects are the exact same object.
 
->Note that `[1, 2, 3]` is a collection literal which is primitive in nature, therefore it can be modified using a `const`.
+Note that `[1, 2, 3]` is a collection literal which is primitive in nature, therefore it can be modified using a `const`.
 
 The above code clearly distinguishes the working of `const` i.e. it modifies literal values as well as variables. This behaviour is possible due to the very nature of things in Dart.
 
@@ -114,4 +114,6 @@ var values = [1, 2, 3];
 print(identical(numbers, values)); //hence results in 'false'
 ```
 
-The nature of `const` can be further solidified in the classes and objects section.
+The nature of `const` can be further solidified in the [classes and objects][chapter3] section.
+
+[chapter3]: https://github.com/markus-dart/dart/blob/master/chapter_3
