@@ -25,7 +25,7 @@ The above code shows the general structure of a dart program.
 - `'Anything within quotes is a String'`.  
 - Logical lines are terminated using `;`
 
->To understand the concept of *functions*, visit [Chapter 2][chapter2].
+>To understand the concept of *functions*, visit [Functions in Dart][chapter2].
 
 ## **`main()`**
 
@@ -45,7 +45,7 @@ Here `main()` acts as the *entry point* for the Dart program. It is just like an
 
 - Dart is a *strongly typed* language, i.e. Dart provides primitive *types* (`int`, `double`...) for data, but it also has the ability to *infer* types, hence providing functionality as per need.
 
->To understand what *objects* are, and why *functions* can be treated as objects, visit [Chapter 3][chapter3].
+>To understand what *objects* are, and why *functions* can be treated as objects, visit [Class and Object][chapter3].
 
 [chapter2]: https://github.com/markus-dart/dart/tree/master/chapter_2
 [chapter3]: https://github.com/markus-dart/dart/tree/master/chapter_3
