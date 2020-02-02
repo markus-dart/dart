@@ -5,7 +5,7 @@ This chapter deals with the *building blocks* of the language, you many skip thi
 ## **The Sections**
 
 - [**Section One**][section1] : Introduction to variables and values.
-- [**Section Two**][section2] : Some insight to the built-in types.
+- [**Section Two**][section2] : Some insight to the concept of data-types.
 
 Before proceeding let us first perform the ritual of the *Hello World* program, as is the case when learning any language.
 
@@ -29,15 +29,13 @@ The above code shows the general structure of a dart program.
 
 ## **`main()`**
 
-As already ascertained, Dart follows the *C* style syntax, which uses the concept of an ***entry point*** to a program.
-
-This concept provides languages that are *compiled* to be extremely robust when implementing *Algorithms*.
-
+As already ascertained, Dart follows the *C* style syntax, which uses the concept of an ***entry point*** to a program.  
+This concept provides languages that are *compiled* to be extremely robust when implementing *Algorithms*.  
 Here `main()` acts as the *entry point* for the Dart program. It is just like any other *function*, except that, it is *called* first when a program is *executed*.
 
 ### **Points To Remember**
 
-- It is important to note that in Dart, everything that can be stored in a *variable* is an *object*.
+- It is important to note that, in Dart, everything that can be stored in a *variable* is an *object* belonging to some class. This will become more apparent in the third chapter.
 
 - An *object* is simply an *instance* of a class.
 
