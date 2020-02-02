@@ -164,10 +164,8 @@ String interpolation, or using expression within strings is also supported by Da
 
 ```dart
 var name = 'Markus';
-print('My name is $name');
-//Output: 'My name is Markus'
-print('My name is ${name.toUpperCase()}');
-//Output: 'My name is MARKUS'
+print('My name is $name'); //Output: 'My name is Markus'
+print('My name is ${name.toUpperCase()}'); //Output: 'My name is MARKUS'
 ```
 
 > **Note:** `name.toUpperCase()` is an expression. Also, the curly braces `{}` are not required if only variables are used in string interpolation.
