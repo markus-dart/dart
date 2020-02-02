@@ -12,13 +12,13 @@ To enhance the learning path and explain the fundamentals of Dart from a learner
 
 > Dart is a client-optimized language for fast apps on any platform.
 
-As the above quote suggests, dart is a language primarily for *development*.  
-It is designed with the idea of facilitating the *design* and *performance* of user applications.
+As the above quote suggests, dart is a language primarily for *development*.
+
+It is built with the idea of facilitating the *design* and *performance* of user applications.
 
 ## Nature of Dart
 
-It is a purely *object oriented language* in that, every instance of code within dart is an equivalent object that represents that code.  
-It is syntatically similar to the *C language* and uses the familiar *block style* syntax.  
+It is a purely *object oriented language* in that, every instance of code within dart is an equivalent object that represents that code. It is syntatically similar to the *C language* and uses the familiar *block style* syntax.  
 
 ```dart
 //This is a block, enclosed by curly brackets

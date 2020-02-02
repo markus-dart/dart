@@ -2,10 +2,12 @@
 
 ## **Variables**  
 
-Variables are generally references to some values in memory. A good distinction to make, before proceeding to understanding variables, is that *variables* and *values* mean entirely different things.
+Variables are generally references to some values in memory. A good distinction to make, before understanding variables, is that *variables* and *values* mean entirely different things.
 
 One must understand that *variables* are some **name** given to a space in memory, through which certain characteristics can be enforced on that memory.  
+
 The memory space can then be **initialized** with a *value* that fulfills this characteristic demand.  
+
 Initialization means, the first or *initial* assignment (storage) of a *value* to a variable using the "`=`" operator.
 
 A *value* is any valid *data* that can be used in the program.
@@ -21,7 +23,8 @@ var name = 'Markus';
 name = 'Connor'; //can assign values of type String
 ```
 
-Realize that `var` behaves as if it creates a *reference* to a space of memory, which when initialized gets the [*type*][types] *inferred* from the value.  
+Realize that `var` behaves as if it creates a *reference* to a space of memory, which when initialized gets the [*type*][types] *inferred* from the value.
+
 Therefore, one cannot change the *type* of a `var` variable but can only change its *value*, as in the example above, the variable **name** adheres to the `String` *type*, once initialized.
 
 > Note: Uninitialized variables default to the `null` *type*.
@@ -58,7 +61,8 @@ But Dart also has a special yet sometimes misunderstood keyword, named `const`. 
 
 To understand this, we need to understand *how* and more importantly ***when*** variables are ***initialized***.
 
-Variables that are assigned through `final`, `var` or `dynamic` are evaluated at *runtime* i.e. they obtain values only when the code is running.  
+Variables that are assigned through `final`, `var` or `dynamic` are evaluated at *runtime* i.e. they obtain values only when the code is running.
+
 Sometimes, situations may arise where a value, say the *height* of a *Button*, is known even before compilation. These values can be assigned right at *compile-time* using `const`.
 
 #### **How does `const` modify variables?**  

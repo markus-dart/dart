@@ -29,9 +29,9 @@ The above code shows the general structure of a dart program.
 
 ## **`main()`**
 
-As already ascertained, Dart follows the *C* style syntax, which uses the concept of an ***entry point*** to a program.  
-This concept provides languages that are *compiled* to be extremely robust when implementing *Algorithms*.  
-Here `main()` acts as the *entry point* for the Dart program. It is just like any other *function*, except that, it is *called* first when a program is *executed*.
+As already ascertained, Dart follows the *C* style syntax, which uses the concept of an ***entry point*** to a program. This concept provides languages that are *compiled* to be extremely robust when implementing *Algorithms*.
+
+Here `main()` acts as the *entry point* for the Dart program. It is just like any other *function*, except that it is *called* first when a program is *executed*.
 
 ### **Points To Remember**
 
